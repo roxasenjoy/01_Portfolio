@@ -5,6 +5,22 @@
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+/* Scroll Bar Custom */
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+/* Background */
+::-webkit-scrollbar-track{
+    background: #f2f2fc;
+
+}
+
+/* Bar */
+::-webkit-scrollbar-thumb{
+    background-color:#ec1839;
+}
+
 /* General Style */
 body{
     margin: 0;
