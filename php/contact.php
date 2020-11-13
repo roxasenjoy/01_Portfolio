@@ -17,5 +17,7 @@ if(isset($_POST["submit"])){
 
     mail($mailTo, $sujet, $txt, $headers);
 
-    header("Location:../main.html?mailsend");
+    header("Location:../main.php?mailsend");
 }
+
+header("Location:../main.php?error='Votre message est invalide'");
