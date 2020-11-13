@@ -562,17 +562,17 @@
 
                         <!-- Contact Form -->
                         <div class="row">
-                            <form action="POST" class="contact-form padd-15">
+                            <form method="POST" class="contact-form padd-15" action="php/contact.php">
                                 <div class="row">
                                     <div class="form-item col-6 padd-15">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Prénom * ">
+                                            <input type="text" class="form-control" placeholder="Nom * " name="nom">
                                         </div>
                                     </div>
 
                                     <div class="form-item col-6 padd-15">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Adresse Email * ">
+                                            <input type="text" class="form-control" placeholder="Adresse Email * " name="email">
                                         </div>
                                     </div>
                                 </div>
@@ -580,7 +580,7 @@
                                 <div class="row">
                                     <div class="form-item col-12 padd-15">
                                         <div class="form-group">
-                                            <input type="tel" class="form-control" placeholder="Numéro de téléphone * ">
+                                            <input type="tel" class="form-control" placeholder="Numéro de téléphone * " name="telephone">
                                         </div>
                                     </div>
                                 </div>
@@ -588,7 +588,7 @@
                                 <div class="row">
                                     <div class="form-item col-12 padd-15">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Sujet * ">
+                                            <input type="text" class="form-control" placeholder="Sujet * " name="sujet">
                                         </div>
                                     </div>
                                 </div>
@@ -596,14 +596,14 @@
                                 <div class="row">
                                     <div class="form-item col-12 padd-15">
                                         <div class="form-group">
-                                            <textarea class="form-control" placeholder="Votre message... * "></textarea>
+                                            <textarea class="form-control" placeholder="Votre message... * " name="message"></textarea>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="col-12 padd-15">
-                                        <button type="submit" class="btn">Envoyer</button>
+                                        <button type="submit" class="btn" name="submit">Envoyer</button>
                                     </div>
                                 </div>
 
