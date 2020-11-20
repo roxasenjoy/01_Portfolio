@@ -15,7 +15,9 @@
     background: #f2f2fc;
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 /* General Style */
 body{
