@@ -15,10 +15,7 @@
     background: #f2f2fc;
 }
 
-/* Bar */
-::-webkit-scrollbar-thumb{
-    background-color:#ec1839;
-}
+
 
 /* General Style */
 body{
