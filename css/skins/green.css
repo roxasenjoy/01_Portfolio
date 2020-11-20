@@ -14,7 +14,11 @@
 .portfolio .portfolio-filter  button.active,
 .service .service-item .service-item-inner .icon .fa,
 .about .about-content .about-text h3 span,
+.about .about-content .personnal-info .info-item p .findJob,
+body.dark .about .about-content .personnal-info .info-item p .findJob,
+body.dark .aside .nav li a:hover,
 .aside .nav li a:hover,
+body.dark .aside .nav li a.active,
 .aside .nav li a.active{
     color: #72b626;
 }
@@ -38,4 +42,9 @@
 
 .portfolio .portfolio-filter  button.active{
     border-color: #72b626;
+}
+
+.shadow-dark,
+body.dark .shadow-dark{
+    box-shadow: 0 0 20px rgba(114, 182, 38,0.25);
 }
