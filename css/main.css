@@ -99,7 +99,7 @@ input, textarea, select{
     display: -ms-flex;
     flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    margin-right: -15px;
+
     position: relative;
 }
 
@@ -387,6 +387,7 @@ input, textarea, select{
         line-height: 25px;
         color: #504e70;
         margin: 0;
+        text-align: justify;
     }
 
     .about .about-content .personnal-info{
@@ -1038,6 +1039,7 @@ body.dark .section{
     background-color: #151515;
 }
 
+body.dark .contact .contact-form .form-item .form-control,
 body.dark .service .service-item .service-item-inner,
 body.dark .about .about-content .timeline,
 body.dark .aside{
@@ -1062,6 +1064,7 @@ body.dark .aside .nav li a{
     border-color: #393939;
 }
 
+body.dark .contact .contact-form .form-item .form-control,
 body.dark .aside .copyright-text,
 body.dark .contact .contact-info-item p,
 body.dark .portfolio .portfolio-filter button:not(.active),
@@ -1126,5 +1129,11 @@ body.dark .home .intro p{
         flex: 0 0 100%;
         max-width: 100%;
         -ms-flex: 0 0 100%;
+    }
+
+    .padd-15{
+        padding-right: 0px;
+        padding-left: 0px;
+
     }
 }
