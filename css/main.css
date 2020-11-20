@@ -1046,6 +1046,7 @@ body.dark .aside{
     background-color: #222222;
 }
 
+body.dark .home .intro h1,
 body.dark .contact .contact-info-item h4,
 body.dark .service .service-item .service-item-inner h4,
 body.dark .about .about-content .timeline .timeline-title,
