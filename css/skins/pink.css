@@ -7,6 +7,7 @@
     border-bottom: 4px solid #ec1839;
 }
 
+.about .about-content .timeline .timeline-text li::before ,
 .contact .contact-info-item .icon .fa,
 .lightbox .lightbox-controls .prev-item .fa,
 .lightbox .lightbox-controls .next-item .fa,

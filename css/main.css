@@ -15,9 +15,6 @@
     background: #f2f2fc;
 }
 
-html{
-    scroll-behavior: smooth;
-}
 
 /* General Style */
 body{
@@ -49,6 +46,55 @@ input, textarea, select{
     min-height: 100vh;
     display: block;
     padding: 0 30px;
+    position: fixed;
+    left:270px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    opacity:1;
+    transition: all 0.3s ease;
+    -webkit-transition: all .3s ease;
+}
+
+.section.back-section{
+    z-index: 1;
+
+}
+
+.section.active{
+    opacity: 1;
+    z-index: 2;
+    animation: slideSection 1s ease;
+    -webkit-animation: slideSection 1s ease;
+}
+
+@-webkit-keyframes slideSection {
+    0%{
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    100%{
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+
+}
+
+@keyframes slideSection {
+    0%{
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    100%{
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+
 }
 
 .section .container {
@@ -109,9 +155,7 @@ input, textarea, select{
 
 }
 
-.main-content{
-    padding-left: 270px;
-}
+
 
 .container{
     max-width: 1670px;
@@ -154,6 +198,71 @@ input, textarea, select{
     display: none !important;
 }
 
+/* Preloader */
+.preloader{
+    background-color: #222222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 150;
+
+    display: -ms-flexbox;
+    display: flex;
+
+    -ms-flex-align: center;
+    align-items: center;
+
+    -ms-flex-pack:center;
+    justify-content: center;
+
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.preloader.opacity-0{
+    opacity: 0;
+}
+
+
+.preloader .loader{
+    height: 40px;
+    width: 40px;
+    border: 4px solid #e3e3e3;
+    border-radius: 50%;
+    border-top: 4px solid transparent ;
+    border-bottom: 4px solid transparent;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100%{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes spin {
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100%{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+}
+
 /* Aside */
 .aside{
     width: 270px ;
@@ -165,6 +274,9 @@ input, textarea, select{
     z-index:10;
     border-right: #e8dfec 1px solid;
     padding: 30px;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+    -webkit-transition: all .3s ease;
 
 
 }
@@ -213,7 +325,7 @@ input, textarea, select{
     cursor:pointer;
     position: fixed;
     left: 300px;
-    top: 30px;
+    top: 20px;
     z-index:11;
     border-radius: 5px;
     background-color:#fdf9ff;
@@ -224,6 +336,8 @@ input, textarea, select{
     align-items: center;
     -ms-flex-pack: center;
     justify-content: center;
+    transition: all 0.3s ease;
+    -webkit-transition: all .3s ease;
 }
 
 .aside .nav-toggler span{
@@ -231,6 +345,10 @@ input, textarea, select{
     width: 18px;
     display: inline-block;
     position: relative;
+}
+
+.aside .nav-toggler.open span{
+   background-color: transparent;
 }
 
 .aside .nav-toggler span::before{
@@ -242,6 +360,12 @@ input, textarea, select{
     left: 0;
 }
 
+.aside .nav-toggler.open span::before{
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top:0;
+}
+
 .aside .nav-toggler span::after{
     content:'';
     height: 2px;
@@ -249,6 +373,12 @@ input, textarea, select{
     position: absolute;
     top: 6px;
     left: 0;
+}
+
+.aside .nav-toggler.open span::after{
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top:0;
 }
 
 .aside .nav{
@@ -600,7 +730,7 @@ input, textarea, select{
     -ms-flex: 0 0 33.33%;
     flex: 0 0 33.33%;
     max-width: 33.33%;
-    margin-top: 50px;
+    margin-top: 35px;
     display: flex;
     display: -ms-flex;
 }
@@ -1084,13 +1214,27 @@ body.dark .home .intro p{
 
 /* Responsive */
 @media (max-width: 1199px){
-    .aside{
-        left:-270px;
+    .aside .nav-toggler{
+        display: flex;
+        display: -ms-flex;
+        left:30px;
     }
 
-    .main-content{
-        padding-left: 0;
+    .aside .nav-toggler.open{
+        left: 300px;
     }
+
+    .aside{
+        left: -270px;
+    }
+    .aside.open{
+        left: 0px;
+    }
+
+    .section{
+        left:0;
+    }
+
 
     .about .about-content .personnal-info .info-item p span{
         display:inline-block;

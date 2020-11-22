@@ -27,6 +27,15 @@
     </head>
     <body>
 
+        <!-- Preloader -->
+        <div class="preloader">
+            <div class="loader">
+
+            </div>
+        </div>
+
+        <!-- Preloader End-->
+
         <!-- Navbar -->
         <div class="main-container">
             <!-- Aside -->
@@ -45,7 +54,7 @@
                 <ul class="nav">
                     <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
                     <li><a href="#about"><i class="fa fa-user"></i>A Propos</a></li>
-                    <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
+                    <li><a href="#service"><i class="fa fa-list"></i>Services</a></li>
                     <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
                   <!--  <li><a href="#"><i class="fa fa-envelope"></i>Blog</a></li> -->
                     <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
@@ -58,8 +67,8 @@
             <!-- Aside end -->
 
             <!-- Main Content -->
-            <div class="main-content" id="home">
-                <section class="home section">
+            <div class="main-content" >
+                <section class="home section active" id="home">
                     <!-- Home section -->
                     <div class="container ">
                         <div class="intro">
@@ -82,7 +91,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
-                                <h2 data-aos="fade-in"> A Propos</h2>
+                                <h2  > A Propos</h2>
                             </div>
                         </div>
 
@@ -92,10 +101,11 @@
                                     <div class="about-text padd-15">
                                         <h3>Je suis Andrew Mahé et <span> développeur FullStack ! </span> </h3>
                                         <p>
-                                            Hello !  Mon nom est Andrew Mahé. Je suis développeur FullStack et je suis passionné et médiculeux
+                                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa qui sint unde voluptatem. Accusantium asperiores autem consectetur cumque, cupiditate dolore esse facere libero magnam mollitia perspiciatis quaerat, sequi ut voluptates?</span>
+                                          <!--  Hello !  Mon nom est Andrew Mahé. Je suis développeur FullStack et je suis passionné et médiculeux
                                             lors de mes projets. Avec 2 ans d'expériences en tant que développeur Web professionnel, j'ai acquis des compétences
                                             et le savoir nécessaire pour faire de votre projet un succès ! J'apprécie chaque étape du processus de conception,
-                                            de la discussion à la collaboration.
+                                            de la discussion à la collaboration.-->
                                         </p>
                                     </div>
                                 </div>
@@ -128,17 +138,17 @@
                                             </div>
                                         </div>
 
-                                        <div class="row" data-aos="fade-in">
+                                        <div class="row"  >
                                             <div class="buttons padd-15">
                                                 <a href="files/CV%20Andrew%20Mahé.pdf" target="_blank" class="btn" download>Télécharger mon CV</a>
-                                                <a href="#" class="btn">Me contacter</a>
+                                                <a href="#contact" data-section-index="1" class="btn hire-me">Me contacter</a>
                                             </div>
                                         </div>
 
                                     </div>
 
                                     <div class="skills padd-15">
-                                        <div class="row" data-aos="fade-in">
+                                        <div class="row"  >
                                             <div class="skill-item padd-15">
                                                 <h5>HTML / CSS (Sass)</h5>
                                                 <div class="progress">
@@ -202,7 +212,7 @@
                                     <div class="education padd-15">
                                         <h3 class="title">Formations</h3>
 
-                                        <div class="row" data-aos="fade-in">
+                                        <div class="row"  >
                                             <div class="timeline-box">
                                                 <div class="timeline shadow">
 
@@ -250,7 +260,7 @@
 
                                         <div class="row">
                                             <div class="timeline-box">
-                                                <div class="timeline shadow" data-aos="fade-in">
+                                                <div class="timeline shadow"  >
 
                                                     <!-- Timeline Item -->
                                                     <div class="timeline-item">
@@ -268,7 +278,7 @@
                                                     </div>
 
                                                     <!-- Timeline Item -->
-                                                    <div class="timeline-item" data-aos="fade-in">
+                                                    <div class="timeline-item"  >
                                                         <div class="circle-dot"></div>
                                                         <h6 class="timeline-date">
                                                             <i class="fa fa-calendar"></i>  01/04/2019 - 30/06/2020
@@ -283,7 +293,7 @@
                                                     </div>
 
                                                     <!-- Timeline Item -->
-                                                    <div class="timeline-item" data-aos="fade-in">
+                                                    <div class="timeline-item"  >
                                                         <div class="circle-dot"></div>
                                                         <h6 class="timeline-date">
                                                             <i class="fa fa-calendar"></i>  02/07/2019 - 30/06/2019
@@ -296,7 +306,7 @@
                                                     </div>
 
                                                     <!-- Timeline Item -->
-                                                    <div class="timeline-item" data-aos="fade-in">
+                                                    <div class="timeline-item"  >
                                                         <div class="circle-dot"></div>
                                                         <h6 class="timeline-date">
                                                             <i class="fa fa-calendar"></i>  10/03/2019 - 12/06/2019
@@ -310,7 +320,7 @@
                                                     </div>
 
                                                     <!-- Timeline Item -->
-                                                    <div class="timeline-item" data-aos="fade-in">
+                                                    <div class="timeline-item"  >
                                                         <div class="circle-dot"></div>
                                                         <h6 class="timeline-date">
                                                             <i class="fa fa-calendar"></i>  27/07/2018 - 07/09/2018
@@ -335,7 +345,7 @@
                 <!-- Service Section End -->
 
                 <!-- Services section -->
-                <section class="service section" id="services" >
+                <section class="service section" id="service" >
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
@@ -343,7 +353,7 @@
                             </div>
                         </div>
 
-                        <div class="row" data-aos="fade-in">
+                        <div class="row"  >
                             <!-- Service Item -->
                             <div class="service-item padd-15">
                                 <div class="service-item-inner">
@@ -357,7 +367,7 @@
                             <!-- Service Item End -->
 
                             <!-- Service Item -->
-                            <div class="service-item padd-15" data-aos="fade-in">
+                            <div class="service-item padd-15"  >
                                 <div class="service-item-inner">
                                     <div class="icon"><i class="fa fa-code"></i></div>
                                     <h4>Développement Web</h4>
@@ -368,7 +378,7 @@
                             <!-- Service Item End -->
 
                             <!-- Service Item -->
-                            <div class="service-item padd-15" data-aos="fade-in">
+                            <div class="service-item padd-15"  >
                                 <div class="service-item-inner">
                                     <div class="icon"><i class="fa fa-film"></i></div>
                                     <h4>Vidéo Editing</h4>
@@ -379,7 +389,7 @@
                             <!-- Service Item End -->
 
                             <!-- Service Item -->
-                            <div class="service-item padd-15" data-aos="fade-in">
+                            <div class="service-item padd-15"  >
                                 <div class="service-item-inner">
                                     <div class="icon"><i class="fa fa-rocket"></i></div>
                                     <h4>Seo Optimization</h4>
@@ -390,7 +400,7 @@
                             <!-- Service Item End -->
 
                             <!-- Service Item -->
-                            <div class="service-item padd-15" data-aos="fade-in">
+                            <div class="service-item padd-15"  >
                                 <div class="service-item-inner">
                                     <div class="icon"><i class="fa fa-paint-brush"></i></div>
                                     <h4>Logo Design</h4>
@@ -401,7 +411,7 @@
                             <!-- Service Item End -->
 
                             <!-- Service Item -->
-                            <div class="service-item padd-15" data-aos="fade-in">
+                            <div class="service-item padd-15"  >
                                 <div class="service-item-inner">
                                     <div class="icon"><i class="fa fa-laptop"></i></div>
                                     <h4>Web Design</h4>
@@ -426,7 +436,7 @@
 
 
                         <div class="row">
-                            <div class="portfolio-filter padd-15" data-aos="fade-in">
+                            <div class="portfolio-filter padd-15"  >
                                 <button type="button" class="active" data-filter="all">All</button>
                                 <button type="button" data-filter="web-design">Web Design</button>
                                 <button type="button" data-filter="web-developpement">Web Developpement</button>
@@ -436,7 +446,7 @@
 
                         <div class="row">
                             <!-- Portfolio Item -->
-                            <div class="portfolio-item padd-15" data-category="web-design" data-aos="fade-in">
+                            <div class="portfolio-item padd-15" data-category="web-design"  >
                                 <div class="portfolio-item-inner">
                                     <div class="portfolio-img">
                                         <img src="img/responsive-image.jpg" alt="Site portfolio">
@@ -452,7 +462,7 @@
                             <!-- Portfolio Item End -->
 
                             <!-- Portfolio Item -->
-                            <div class="portfolio-item padd-15" data-category="web-design" data-aos="fade-in">
+                            <div class="portfolio-item padd-15" data-category="web-design"  >
                                 <div class="portfolio-item-inner">
                                     <div class="portfolio-img">
                                         <img src="img/responsive-image.jpg" alt="Site portfolio">
@@ -468,7 +478,7 @@
                             <!-- Portfolio Item End -->
 
                             <!-- Portfolio Item -->
-                            <div class="portfolio-item padd-15" data-category="web-developpement" data-aos="fade-in">
+                            <div class="portfolio-item padd-15" data-category="web-developpement"  >
                                 <div class="portfolio-item-inner">
                                     <div class="portfolio-img">
                                         <img src="img/responsive-image.jpg" alt="Site portfolio">
@@ -484,7 +494,7 @@
                             <!-- Portfolio Item End -->
 
                             <!-- Portfolio Item -->
-                            <div class="portfolio-item padd-15" data-category="web-developpement" data-aos="fade-in">
+                            <div class="portfolio-item padd-15" data-category="web-developpement"  >
                                 <div class="portfolio-item-inner">
                                     <div class="portfolio-img">
                                         <img src="img/responsive-image.jpg" alt="Site portfolio">
@@ -500,7 +510,7 @@
                             <!-- Portfolio Item End -->
 
                             <!-- Portfolio Item -->
-                            <div class="portfolio-item padd-15" data-category="games" data-aos="fade-in">
+                            <div class="portfolio-item padd-15" data-category="games"  >
                                 <div class="portfolio-item-inner">
                                     <div class="portfolio-img">
                                         <img src="img/responsive-image.jpg" alt="Site portfolio">
@@ -516,7 +526,7 @@
                             <!-- Portfolio Item End -->
 
                             <!-- Portfolio Item -->
-                            <div class="portfolio-item padd-15" data-category="games" data-aos="fade-in">
+                            <div class="portfolio-item padd-15" data-category="games"  >
                                 <div class="portfolio-item-inner">
                                     <div class="portfolio-img">
                                         <img src="img/responsive-image.jpg" alt="Site portfolio">
@@ -684,7 +694,7 @@
         <script>
             // You can also pass an optional settings object
             // below listed default settings
-            AOS.init({
+          /*  AOS.init({
                 // Global settings:
                 disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
                 startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
@@ -705,7 +715,7 @@
                 mirror: false, // whether elements should animate out while scrolling past them
                 anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
-            });
+            });*/
         </script>
     </body>
 </html>
