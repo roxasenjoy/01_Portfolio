@@ -1276,6 +1276,12 @@ body.dark .home .intro p{
         -ms-flex: 0 0 100%;
     }
 
+    .about .about-content .personnal-info .info-item{
+        flex: 0 0 100%;
+        max-width: 100%;
+        -ms-flex: 0 0 100%;
+    }
+
     .padd-15{
         padding-right: 0px;
         padding-left: 0px;
